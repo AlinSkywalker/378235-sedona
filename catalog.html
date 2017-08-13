@@ -68,12 +68,14 @@
     <section class="catalog">
       <h2 class="hidden">Результаты поиска</h2>
       <div class="search-result-order">
-        <p class="search-result-count">Найдено: 3</p>
+        <p class="search-result-count">Найдено: <span>3</span></p>
         <p class="search-result-sort">Сортировка:</p>
         <ul>
-          <li><a class="sort-option">ПО ЦЕНЕ</a></li>
+          <li><a class="sort-option active-sort-option">ПО ЦЕНЕ</a></li>
           <li><a class="sort-option">ПО ТИПУ</a></li>
           <li><a class="sort-option">ПО РЕЙТИНГУ</a></li>
+          <li><a class="sort-option sort-order-ascending"></a>^</li>
+          <li><a class="sort-option sort-order-descending active-dort-order"></a>v</li>
         </ul>
 
       </div>
@@ -83,7 +85,7 @@
             <img src="img/hotel-1.jpg" width="220" height="165" alt="AMARA RESORT &amp; SPA">
           </p>
           <h3>
-              <span class="catalog-item-title">AMARA RESORT &amp; SPA</span>
+              <a class="catalog-item-title" href="#">AMARA RESORT &amp; SPA</a>
           </h3>
           <p class="catalog-item-price">
             <span class="catalog-category">Гостиница</span>
@@ -94,6 +96,7 @@
             <a class="button button-book" href="#">Забронировать</a>
           </p>
           <p>
+            <span class="catalog-rating-stars">4 звезды</span>
             <span class="catalog-rating">Рейтинг: 8,5</span>
           </p>
         </li>
@@ -102,7 +105,7 @@
             <img src="img/hotel-2.jpg" width="220" height="165" alt="DESERT QUAIL INN">
           </p>
           <h3>
-              <span class="catalog-item-title">DESERT QUAIL INN</span>
+              <a class="catalog-item-title" href="#">DESERT QUAIL INN</a>
           </h3>
           <p class="catalog-item-price">
             <span class="catalog-category">Мотель</span>
@@ -113,6 +116,7 @@
             <a class="button button-book" href="#">Забронировать</a>
           </p>
           <p>
+            <span class="catalog-rating-stars">3 звезды</span>
             <span class="catalog-rating">Рейтинг: 8,9</span>
           </p>
         </li>
@@ -121,7 +125,7 @@
             <img src="img/hotel-3.jpg" width="220" height="165" alt="VILLAS AT POCO DIABOLO">
           </p>
           <h3>
-              <span class="catalog-item-title">VILLAS AT POCO DIABOLO</span>
+              <a class="catalog-item-title" href="#">VILLAS AT POCO DIABOLO</a>
           </h3>
           <p class="catalog-item-price">
             <span class="catalog-category">Гостиница</span>
@@ -132,6 +136,7 @@
             <a class="button button-book" href="#">Забронировать</a>
           </p>
           <p>
+            <span class="catalog-rating-stars">2 звезды</span>
             <span class="catalog-rating">Рейтинг: 9,2</span>
           </p>
         </li>
