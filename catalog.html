@@ -12,10 +12,10 @@
     <header class="main-header">
       <nav class="main-navigation">
         <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и Видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <li><a href="#" class="navigation-item">Информация</a></li>
+          <li><a href="#" class="navigation-item">Фото и Видео</a></li>
+          <li><a href="#" class="navigation-item">Карта штата</a></li>
+          <li><a href="catalog.html" class="active-menu-item navigation-item">Гостиницы</a></li>
         </ul>
       </nav>
       <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип Седоны" class="main-logo" /></a>
@@ -60,8 +60,13 @@
             </fieldset>
             <fieldset>
               <p>
-                <input type="range" name="cost" class="hidden filter-range" id="cost" min="0" max="4000">
+                <label for="from-cost" class="hidden">СТОИМОСТЬ ОТ</label>
+                <input type="text" name="from-cost" class="cost-range-field" id="from-cost" value="ОТ 0">
+                <label for="to-cost" class="hidden">СТОИМОСТЬ ДО</label>
+                <input type="text" name="to-cost" class="cost-range-field" id="to-cost" value="ДО 30000">
                 <label for="cost">Стоимость в сутки (Р)</label>
+                <input type="range" name="cost" class="hidden filter-range" id="cost" min="0" max="4000">
+                
               </p>
               <button type="submit" class="filter-button button">Показать</button>
             </fieldset>
@@ -73,9 +78,9 @@
           <p class="search-result-count">Найдено: <span>3</span></p>
           <p class="search-result-sort">Сортировка:</p>
           <ul class="sort-option-list">
-            <li><a class="sort-option active-sort-option">ПО ЦЕНЕ</a></li>
-            <li><a class="sort-option">ПО ТИПУ</a></li>
-            <li><a class="sort-option">ПО РЕЙТИНГУ</a></li>
+            <li><a class="sort-option active-sort-option" href="#">ПО ЦЕНЕ</a></li>
+            <li><a class="sort-option" href="#">ПО ТИПУ</a></li>
+            <li><a class="sort-option" href="#">ПО РЕЙТИНГУ</a></li>
           </ul>
           <ul class="sort-order-list">
             <li><a class="sort-order-ascending hidden"></a>^</li>
