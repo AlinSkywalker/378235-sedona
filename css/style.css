@@ -35,11 +35,12 @@ body {
   padding: 0;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2)
+  box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
+  position:relative;
 }
 
 .main-header {
-  height: 56px;
+  /*min-height: 56px;*/
   padding: 0;
   margin: 0;
   position: relative;
@@ -48,19 +49,33 @@ body {
   background-color: #ffffff;
 }
 .main-navigation ul {
-  /*display: flex;
-  align-items: center;
-  justify-content: space-between;*/
   padding: 0;
   margin: 0;
-  padding: 0 6% 0 6%;
+  padding-top:10px;/*на глазок*/
+  padding-bottom:10px;/*на глазок*/
   list-style: none;
+  font-size: 0;
 }
 
 .main-navigation li{
-  /*display: inline-block;*/
-  height: 56px;
+  display: inline-block;
   width: 20%;
+  font-size: 14px;
+}
+.main-navigation li:nth-child(1){
+  padding-left: 6%;
+  text-align: left;
+}
+.main-navigation li:nth-child(2){
+  padding-right: 8%;
+  text-align: left;
+}
+.main-navigation li:nth-child(3){
+  text-align: right;
+}
+.main-navigation li:nth-child(4){
+  padding-right: 6%;
+  text-align: right;
 }
 .main-logo{
   position: absolute;
@@ -75,17 +90,20 @@ body {
   background-color: #ffffff;
 }
 .sedona-foto {
-  background: url(../img/white-background-shape.svg) no-repeat 50% bottom, url(../img/background-photo.jpg) no-repeat 50% 20%;
+  background: url(../img/white-background-shape.svg) no-repeat 50% bottom,
+   url(../img/background-photo.jpg) no-repeat 50% 20%;
   background-size: 100% 57px, 100%;
   height: 513px;
   padding: 0;
   margin: 0;
+  text-align: center;
+  padding-top: 90px;/*на глазок*/
 }
 
 .hotel-search-map {
   background: url(../img/map.png) no-repeat 50% top;
   width: 100%;
-  height: 475px;
+  height: 598px;
   border:none;
 }
 
@@ -129,6 +147,7 @@ a {
   display: block;
   text-align: center;
   border: none;
+  text-transform: inherit;
 }
 
 .button:active {
@@ -163,23 +182,40 @@ a {
   background-color: #503e33;
 }
 
+.reasons{
+  text-align: center;
+}
+
 .reason-item-block-gray {
   background-color: #eeeeee;
-  height: 256px;
+  /*min-height: 256px;*/
   display: flex;
+}
+
+.reason-item-block-white .reasons-item{
+  padding-top: 164px;
+  padding-bottom: 85px;
+  width: 33%;
+}
+
+.reason-item-block-gray .reasons-item{
+  padding-top: 50px;
+  padding-bottom: 65px;
+  width: 33%;
 }
 
 .reason-item-block-white {
   background-color: #ffffff;
-  height: 330px;
+  /*min-height: 330px;*/
   display: flex;
 }
 
 .reasons-item-blue {
   background-color: #81b3d2;
-  height: 256px;
+  /*min-height: 256px;*/
   display: flex;
   color: #ffffff;
+  text-align: center;
 }
 
 .reasons-item-blue .reasons-item-title{
@@ -192,6 +228,28 @@ a {
 
 .reasons-item-info {
   width: 33%;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.reasons-item-description{
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+}
+
+.reasons-item-blue .reasons-item-description{
+  min-width: 199px;
+  max-width: 307px;
+}
+.reason-item-block-white .reasons-item-description{
+  min-width: 165px;
+  max-width: 304px;
+}
+.reason-item-block-gray .reasons-item-description{
+  min-width: 200px;
+  max-width: 270px;
+  word-wrap: break-word;
 }
 
 .reason-item-foto-city {
@@ -204,9 +262,15 @@ a {
   background-size: 100%;
 }
 
+.reasons-item{
+  text-align: center;
+}
+
 .filter-form {
   background: url(../img/filter-background.jpg) no-repeat;
   color: #ffffff;
+  padding: 34px 6% 0 6%;
+  display: flex;
 }
 
 .hotel-search {
@@ -222,7 +286,14 @@ a {
 }
 .modal{
   width: 568px;
-  box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15)
+  box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
+  margin: 0;
+  position: absolute;
+  background: #ffffff;
+  padding-bottom: 55px;
+}
+.modal h2{
+  margin: 0;
 }
 .search-form {
   width: 458px;
@@ -232,14 +303,17 @@ a {
 .hotel-search-button {
   display: block;
   width: inherit;
-  height: 86px;
+  /*min-height: 86px;*/
   font-size: 21px;
   font-family: inherit;
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .modal-search-button {
   width: 458px;
-  height: 58px;
+  min-height: 58px;
   vertical-align: middle;
   font-size: 21px;
   font-family: inherit;
@@ -252,8 +326,9 @@ a {
 
 .filter-button {
   background-color: rgba(255, 255, 255, 0);
-  width: 133px;
-  height: 32px;
+  width: 135px;
+  min-height: 35px;
+  border: 2px solid #ffffff;
 }
 
 .filter-button:hover {
@@ -316,7 +391,13 @@ a {
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  /*justify-content: space-between;*/
+}
+.main-footer-absolute{
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .footer-block{
   width:33%;
@@ -328,6 +409,10 @@ a {
 .footer-social ul {
   list-style: none;
 }
+.footer-social ul li{
+  display: inline-block;
+  /*font-size: 0;*/
+}
 .filters ul{
   list-style: none;
 }
@@ -336,4 +421,56 @@ a {
 }
 .catalog-list{
   list-style: none;
+}
+.filters fieldset{
+  border: none;
+  text-align: left;
+  padding: 0; 
+  margin-right: 20px;
+  margin-bottom: 23px;
+  width: 33%;
+}
+.filters fieldset ul{
+  margin: 0;
+  padding: 0;
+}
+.filters fieldset legend{
+  margin: 0;
+  padding: 0;
+}
+.filter-option{
+  position: relative;
+  margin-top: 36px;
+  padding: 0;
+
+}
+
+.filter-checkbox + label{
+  padding-left: 40px;
+  
+}
+
+.filter-checkbox + label::before{
+  display: block;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0) url(../img/checkbox-off.svg) no-repeat;
+  z-index: 5;
+  content: '';
+}
+
+.filter-checkbox:checked + label::before{
+  background: rgba(0, 0, 0, 0) url(../img/checkbox-on.svg) no-repeat;
+}
+.cost-range-field{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: #ffffff;
+  width:40px;
+}
+.cost-from-group,.cost-to-group{
+  border: 2px solid #ffffff;
 }

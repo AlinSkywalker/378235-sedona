@@ -59,14 +59,18 @@
               </ul>
             </fieldset>
             <fieldset>
-              <p>
-                <label for="from-cost" class="hidden">СТОИМОСТЬ ОТ</label>
-                <input type="text" name="from-cost" class="cost-range-field" id="from-cost" value="ОТ 0">
-                <label for="to-cost" class="hidden">СТОИМОСТЬ ДО</label>
-                <input type="text" name="to-cost" class="cost-range-field" id="to-cost" value="ДО 30000">
-                <label for="cost">Стоимость в сутки (Р)</label>
-                <input type="range" name="cost" class="hidden filter-range" id="cost" min="0" max="4000">
-                
+              <legend class="filter-group-title">СТОИМОСТЬ В СУТКИ (Р):</legend>
+              <p class="cost-control-group">
+                <p class="cost-from-group">
+                  <label for="from-cost">ОТ</label>
+                  <input type="text" name="from-cost" class="cost-range-field" id="from-cost" value="0">
+                </p>
+                <p class="cost-to-group">
+                  <label for="to-cost">ДО</label>
+                  <input type="text" name="to-cost" class="cost-range-field" id="to-cost" value="30000">
+                </p>
+                <label for="cost" class="hidden">Стоимость</label>
+                <input type="range" name="cost" class="hidden filter-range" id="cost" min="0" max="40000">
               </p>
               <button type="submit" class="filter-button button">Показать</button>
             </fieldset>
@@ -154,17 +158,17 @@
     </main>
 
     <footer class="main-footer">
-      <p class="footer-hashtag">
+      <p class="footer-hashtag footer-block">
         #VISITSEDONA
       </p>
-      <div class="footer-social">
+      <div class="footer-social footer-block">
         <ul>
-          <li class="social-button"><a href="#">Твиттер</a></li>
-          <li class="social-button"><a href="#">Фейсбук</a></li>
-          <li class="social-button"><a href="#">Youtube</a></li>
+          <li class="button social-button"><a href="#">Твиттер</a></li>
+          <li class="button social-button"><a href="#">Фейсбук</a></li>
+          <li class="button social-button"><a href="#">Youtube</a></li>
         </ul>
       </div>
-      <p class="footer-copyright">
+      <p class="footer-copyright footer-block">
         <b>Website by</b>
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-logo hidden">HTML Academy</a>
       </p>
