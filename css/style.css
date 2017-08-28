@@ -25,10 +25,12 @@ body {
   align-items: center;*/
   background-color: #f2f2f2
 }
-.sedona-foto h1{
+
+.sedona-foto h1 {
   padding: 0;
   margin: 0;
 }
+
 .container {
   max-width: 1200px;
   min-width: 768px;
@@ -36,7 +38,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
-  position:relative;
+  position: relative;
 }
 
 .main-header {
@@ -45,72 +47,83 @@ body {
   margin: 0;
   position: relative;
 }
-.main-navigation{
+
+.main-navigation {
   background-color: #ffffff;
 }
+
 .main-navigation ul {
   padding: 0;
   margin: 0;
-  padding-top:10px;/*на глазок*/
-  padding-bottom:10px;/*на глазок*/
+  padding-top: 10px;
+  /*на глазок*/
+  padding-bottom: 10px;
+  /*на глазок*/
   list-style: none;
   font-size: 0;
 }
 
-.main-navigation li{
+.main-navigation li {
   display: inline-block;
   width: 20%;
   font-size: 14px;
 }
-.main-navigation li:nth-child(1){
+
+.main-navigation li:nth-child(1) {
   padding-left: 6%;
   text-align: left;
 }
-.main-navigation li:nth-child(2){
+
+.main-navigation li:nth-child(2) {
   padding-right: 8%;
   text-align: left;
 }
-.main-navigation li:nth-child(3){
+
+.main-navigation li:nth-child(3) {
   text-align: right;
 }
-.main-navigation li:nth-child(4){
+
+.main-navigation li:nth-child(4) {
   padding-right: 6%;
   text-align: right;
 }
-.main-logo{
+
+.main-logo {
   position: absolute;
   top: 0;
   left: 50%;
   z-index: 20;
   transform: translateX(-50%);
 }
-.main-content{
+
+.main-content {
   padding: 0;
   margin: 0;
   background-color: #ffffff;
 }
+
 .sedona-foto {
-  background: url(../img/white-background-shape.svg) no-repeat 50% bottom,
-   url(../img/background-photo.jpg) no-repeat 50% 20%;
+  background: url(../img/white-background-shape.svg) no-repeat 50% bottom, url(../img/background-photo.jpg) no-repeat 50% 20%;
   background-size: 100% 57px, 100%;
   height: 513px;
   padding: 0;
   margin: 0;
   text-align: center;
-  padding-top: 90px;/*на глазок*/
+  padding-top: 90px;
+  /*на глазок*/
 }
 
 .hotel-search-map {
   background: url(../img/map.png) no-repeat 50% top;
   width: 100%;
   height: 598px;
-  border:none;
+  border: none;
 }
 
 .reasons-title,
 .reasons-item-title,
 .catalog-item-title,
-.footer-hashtag{
+.footer-hashtag {
   font-size: 21px;
   font-weight: bold;
   color: #000000;
@@ -182,7 +195,7 @@ a {
   background-color: #503e33;
 }
 
-.reasons{
+.reasons {
   text-align: center;
 }
 
@@ -192,13 +205,13 @@ a {
   display: flex;
 }
 
-.reason-item-block-white .reasons-item{
+.reason-item-block-white .reasons-item {
   padding-top: 164px;
   padding-bottom: 85px;
   width: 33%;
 }
 
-.reason-item-block-gray .reasons-item{
+.reason-item-block-gray .reasons-item {
   padding-top: 50px;
   padding-bottom: 65px;
   width: 33%;
@@ -218,7 +231,7 @@ a {
   text-align: center;
 }
 
-.reasons-item-blue .reasons-item-title{
+.reasons-item-blue .reasons-item-title {
   color: #ffffff;
 }
 
@@ -232,21 +245,23 @@ a {
   padding-bottom: 60px;
 }
 
-.reasons-item-description{
+.reasons-item-description {
   margin-left: auto;
   margin-right: auto;
   word-wrap: break-word;
 }
 
-.reasons-item-blue .reasons-item-description{
+.reasons-item-blue .reasons-item-description {
   min-width: 199px;
   max-width: 307px;
 }
-.reason-item-block-white .reasons-item-description{
+
+.reason-item-block-white .reasons-item-description {
   min-width: 165px;
   max-width: 304px;
 }
-.reason-item-block-gray .reasons-item-description{
+
+.reason-item-block-gray .reasons-item-description {
   min-width: 200px;
   max-width: 270px;
   word-wrap: break-word;
@@ -262,7 +277,7 @@ a {
   background-size: 100%;
 }
 
-.reasons-item{
+.reasons-item {
   text-align: center;
 }
 
@@ -282,9 +297,9 @@ a {
 .hotel-search-with-button {
   margin: 0;
   padding: 0;
- 
 }
-.modal{
+
+.modal {
   width: 568px;
   box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
   margin: 0;
@@ -292,9 +307,11 @@ a {
   background: #ffffff;
   padding-bottom: 55px;
 }
-.modal h2{
+
+.modal h2 {
   margin: 0;
 }
+
 .search-form {
   width: 458px;
   margin: 0 auto 0 auto;
@@ -394,63 +411,75 @@ a {
   width: 100%;
   /*justify-content: space-between;*/
 }
-.main-footer-absolute{
+
+.main-footer-absolute {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.footer-block{
-  width:33%;
+
+.footer-block {
+  width: 33%;
   text-align: center;
 }
-.footer-copyright b{
+
+.footer-copyright b {
   font-weight: normal;
 }
+
 .footer-social ul {
   list-style: none;
 }
-.footer-social ul li{
+
+.footer-social ul li {
   display: inline-block;
   /*font-size: 0;*/
 }
-.filters ul{
+
+.filters ul {
   list-style: none;
 }
-.search-result-order ul{
+
+.search-result-order ul {
   list-style: none;
 }
-.catalog-list{
+
+.catalog-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.filters fieldset{
+
+.filters fieldset {
   border: none;
   text-align: left;
-  padding: 0; 
+  padding: 0;
   margin-right: 20px;
   margin-bottom: 23px;
   width: 33%;
 }
-.filters fieldset ul{
+
+.filters fieldset ul {
   margin: 0;
   padding: 0;
 }
-.filters fieldset legend{
+
+.filters fieldset legend {
   margin: 0;
   padding: 0;
 }
-.filter-option{
+
+.filter-option {
   position: relative;
   margin-top: 36px;
   padding: 0;
-
 }
 
-.filter-checkbox + label{
+.filter-checkbox+label {
   padding-left: 40px;
-  
 }
 
-.filter-checkbox + label::before{
+.filter-checkbox+label::before {
   display: block;
   position: absolute;
   width: 23px;
@@ -462,15 +491,66 @@ a {
   content: '';
 }
 
-.filter-checkbox:checked + label::before{
+.filter-checkbox:checked+label::before {
   background: rgba(0, 0, 0, 0) url(../img/checkbox-on.svg) no-repeat;
 }
-.cost-range-field{
+
+.cost-range-field {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   color: #ffffff;
-  width:40px;
+  width: 40px;
 }
-.cost-from-group,.cost-to-group{
+
+.cost-from-group,
+.cost-to-group {
   border: 2px solid #ffffff;
+}
+
+.search-result-order {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-option-block {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+
+/*.search-result-order{
+  display: flex;
+  align-items: center;
+}*/
+
+.sort-option-list {
+  display: flex;
+  align-items: center;
+}
+
+.sort-order-list {
+  display: flex;
+  align-items: center;
+}
+
+.catalog-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item-info-group {
+  flex-grow: 1;
+}
+
+.catalog {
+  padding: 0 6%;
+}
+
+.catalog-rating-stars,
+.catalog-rating {
+  display: block;
+}
+.catalog-item-info-and-buttons{
+  display: flex;
 }
