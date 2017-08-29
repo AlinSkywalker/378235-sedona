@@ -105,7 +105,7 @@ body {
 .sedona-foto {
   background: url(../img/white-background-shape.svg) no-repeat 50% bottom, 
     url(../img/background-photo.jpg) no-repeat 50% 20%;
-  background-size: 100% 57px, 100%;
+  background-size: 100% 57px, cover;
   height: 513px;
   padding: 0;
   margin: 0;
@@ -205,24 +205,25 @@ a {
   /*min-height: 256px;*/
   display: flex;
 }
-
-.reason-item-block-white .reasons-item {
-  padding-top: 164px;
-  padding-bottom: 85px;
-  width: 33%;
-}
-
-.reason-item-block-gray .reasons-item {
-  padding-top: 50px;
-  padding-bottom: 65px;
-  width: 33%;
-}
-
 .reason-item-block-white {
   background-color: #ffffff;
   /*min-height: 330px;*/
   display: flex;
 }
+
+
+.reason-item-block-white .reasons-item {
+  padding-top: 164px;
+  padding-bottom: 85px;
+  width: 33.333333%;
+}
+
+.reason-item-block-gray .reasons-item {
+  padding-top: 50px;
+  padding-bottom: 65px;
+  width: 33.333333%;
+}
+
 
 .reasons-item-blue {
   background-color: #81b3d2;
@@ -270,12 +271,12 @@ a {
 
 .reason-item-foto-city {
   background: gray url(../img/city.png) no-repeat 50% 50%;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .reason-item-foto-bridge {
   background: gray url(../img/bridge.png) no-repeat 50% 50%;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .reasons-item {
@@ -301,21 +302,24 @@ a {
 }
 
 .modal {
-  width: 568px;
+  width: 458px;
   box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
   margin: 0;
   position: absolute;
   background: #ffffff;
-  padding-bottom: 55px;
+  padding: 55px;
+  padding-top: 40px;
 }
 
 .modal h2 {
   margin: 0;
+  padding: 0;
 }
 
 .search-form {
   width: 458px;
-  margin: 0 auto 0 auto;
+  padding: 0;
+  margin: 0;
 }
 
 .hotel-search-button {
@@ -341,6 +345,10 @@ a {
   width: 46px;
   height: 48px;
   font-size: 0px;
+  margin-right: 7px;
+}
+.social-button:last-child{
+  margin-right: 0;
 }
 .social-button-twitter{
   background: #81b3d2 url(../img/twitter.svg) no-repeat 50% 50%;
@@ -441,7 +449,7 @@ a {
 }
 
 .footer-block {
-  width: 33%;
+  width: 33.333333%;
   text-align: center;
   padding: 37px 0;
 }
@@ -452,6 +460,9 @@ a {
 
 .footer-social ul {
   list-style: none;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-social ul li {
@@ -461,10 +472,14 @@ a {
 
 .filters ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .search-result-order ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog-list {
@@ -479,7 +494,7 @@ a {
   padding: 0;
   margin-right: 20px;
   margin-bottom: 23px;
-  width: 33%;
+  width: 33.333333%;
 }
 
 .filters fieldset ul {
