@@ -359,6 +359,7 @@ a {
   width: 135px;
   min-height: 35px;
   border: 2px solid #ffffff;
+  margin:0 auto; 
 }
 
 .filter-button:hover {
@@ -415,6 +416,7 @@ a {
 .search-result-order {
   font-size: 12px;
   line-height: 18px;
+  padding: 0 6%;
 }
 
 .search-result-count {
@@ -429,6 +431,7 @@ a {
   display: flex;
   width: 100%;
   /*justify-content: space-between;*/
+  align-items: center;
 }
 
 .main-footer-absolute {
@@ -515,18 +518,6 @@ a {
   background: rgba(0, 0, 0, 0) url(../img/checkbox-on.svg) no-repeat;
 }
 
-.cost-range-field {
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  color: #ffffff;
-  width: 40px;
-}
-
-.cost-from-group,
-.cost-to-group {
-  border: 2px solid #ffffff;
-}
-
 .search-result-order {
   display: flex;
   justify-content: space-between;
@@ -559,7 +550,7 @@ a {
   display: flex;
   justify-content: space-between;
   border-bottom: #f2f2f2 2px solid;
-  padding: 31px 0 31px 0;
+  padding: 31px 6%;
 }
 
 .catalog-item:first-child{
@@ -571,7 +562,6 @@ a {
 }
 
 .catalog {
-  padding: 0 6%;
   background-color: #ffffff;
 }
 
@@ -614,4 +604,87 @@ a {
 }
 .button-book{
   margin-top: 10px;
+}
+.hidden{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.cost-control-fieldset{
+  width: 330px;
+}
+.price-controls{
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  font-size: 0;
+  position: relative;
+}
+.price-controls::after{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label{
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 38px;
+}
+.price-controls .min-price,
+.price-controls .max-price{
+  width: 90px;
+  padding-left: 65px;
+}
+.price-controls input{
+  width:50px;
+  margin:0;
+  background-color: rgba(0, 0, 0, 0) ;
+  border: none;
+  outline: none;
+  color:inherit;
+  font: inherit;
+}
+.range-controls{
+  position: relative;
+  margin-bottom: 32px;
+}
+.range-controls .scale{
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar{
+  height: 2px;
+  width: 80%;
+  background-color: #ffffff;
+}
+.range-toggle{
+  width: 4px;
+  height: 4px;
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  position: absolute;
+  top:-9px;
+}
+.range-toggle-min{
+  left:0;
+}
+.range-toggle-max{
+  left: 80%;
+}
+.range-toggle:hover{
+  background-color: #1c4f80;
 }

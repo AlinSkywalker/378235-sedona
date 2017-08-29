@@ -58,20 +58,22 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="cost-control-fieldset">
             <legend class="filter-group-title">СТОИМОСТЬ В СУТКИ (Р):</legend>
-            <p class="cost-control-group">
-              <p class="cost-from-group">
-                <label for="from-cost">ОТ</label>
-                <input type="text" name="from-cost" class="cost-range-field" id="from-cost" value="0">
-              </p>
-              <p class="cost-to-group">
-                <label for="to-cost">ДО</label>
-                <input type="text" name="to-cost" class="cost-range-field" id="to-cost" value="30000">
-              </p>
-              <label for="cost" class="hidden">Стоимость</label>
-              <input type="range" name="cost" class="hidden filter-range" id="cost" min="0" max="40000">
+            <p class="price-controls">
+                <label for="from-cost" class="min-price">ОТ <input type="text" name="from-cost" class="cost-range-field" id="from-cost" value="0">
+                </label>
+                <label for="to-cost" class="max-price">ДО <input type="text" name="to-cost" class="cost-range-field" id="to-cost" value="30000">
+                </label>
             </p>
+            <label for="cost" class="hidden">Стоимость</label>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
             <button type="submit" class="filter-button button">Показать</button>
           </fieldset>
         </form>
@@ -183,7 +185,7 @@
       </div>
       <p class="footer-copyright footer-block">
         <b>Website by</b>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-logo hidden">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright-logo">HTML Academy</a>
       </p>
     </footer>
   </div>
