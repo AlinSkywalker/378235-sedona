@@ -55,9 +55,9 @@ body {
 .main-navigation ul {
   padding: 0;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 15px;
   /*на глазок*/
-  padding-bottom: 10px;
+  padding-bottom: 11px;
   /*на глазок*/
   list-style: none;
   font-size: 0;
@@ -110,7 +110,7 @@ body {
   padding: 0;
   margin: 0;
   text-align: center;
-  padding-top: 90px;
+  padding-top: 77px;
   /*на глазок*/
 }
 
@@ -286,7 +286,7 @@ a {
 .filter-form {
   background: url(../img/filter-background.jpg) no-repeat;
   color: #ffffff;
-  padding: 34px 6% 0 6%;
+  padding: 24px 6% 0 6%;
   display: flex;
 }
 
@@ -399,6 +399,7 @@ a {
 
 .search-result-sort{
   margin-right: 40px;
+  color: #000000;
 }
 
 .sort-option {
@@ -440,6 +441,8 @@ a {
   width: 100%;
   /*justify-content: space-between;*/
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .main-footer-absolute {
@@ -451,11 +454,7 @@ a {
 .footer-block {
   width: 33.333333%;
   text-align: center;
-  padding: 37px 0;
-}
-
-.footer-copyright b {
-  font-weight: normal;
+  padding: 15px 0;
 }
 
 .footer-social ul {
@@ -494,6 +493,7 @@ a {
   padding: 0;
   margin-right: 20px;
   margin-bottom: 23px;
+  margin-top: 0;
   width: 33.333333%;
 }
 
@@ -509,7 +509,7 @@ a {
 
 .filter-option {
   position: relative;
-  margin-top: 36px;
+  margin-top: 20px;
   padding: 0;
 }
 
@@ -565,7 +565,7 @@ a {
   display: flex;
   justify-content: space-between;
   border-bottom: #f2f2f2 2px solid;
-  padding: 31px 6%;
+  padding: 21px 6%;
 }
 
 .catalog-item:first-child{
@@ -702,4 +702,62 @@ a {
 }
 .range-toggle:hover{
   background-color: #1c4f80;
+}
+.copyright-logo{
+  font-size: 0;
+  width:115px;
+  height:41px;
+  background: url(../img/logo-htmlacademy.svg) no-repeat;
+}
+.footer-copyright span{
+  vertical-align: middle;
+  padding-right: 8px;
+  font-weight: normal;
+}
+.footer-copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reasons-title-info{
+  margin-bottom: 58px;
+}
+.reasons-title{
+  margin-bottom: 42px;
+  margin-top: 61px;
+}
+.reason-item-block-white .reasons-item{
+  position: relative;
+}
+.reason-item-block-white .reasons-item .reasons-item-title::before{
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: 10;
+  transform: translate(-50%);
+}
+
+.reason-item-block-white .reasons-item:nth-child(1) .reasons-item-title::before{
+  background: url(../img/icon-1.svg) no-repeat;
+  top:60px;
+  left:50%;
+  height: 72px;
+  width: 75px;
+}
+.reason-item-block-white .reasons-item:nth-child(2) .reasons-item-title::before{
+  background: url(../img/icon-3.svg) no-repeat;
+  top:60px;
+  left:50%;
+  height: 72px;
+  width: 75px;
+}
+.reason-item-block-white .reasons-item:nth-child(3) .reasons-item-title::before{
+  background: url(../img/icon-2.svg) no-repeat;
+  top:60px;
+  left:50%;
+  height: 76px;
+  width: 64px;
+}
+.hotel-serch-info{
+  margin-bottom: 54px;
 }
