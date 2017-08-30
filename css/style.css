@@ -106,12 +106,13 @@ body {
   background: url(../img/white-background-shape.svg) no-repeat 50% bottom, 
     url(../img/background-photo.jpg) no-repeat 50% 20%;
   background-size: 100% 57px, cover;
-  height: 513px;
+  height: 508px;
   padding: 0;
   margin: 0;
   text-align: center;
   padding-top: 77px;
   /*на глазок*/
+  box-sizing: border-box;
 }
 
 .hotel-search-map {
@@ -213,14 +214,14 @@ a {
 
 
 .reason-item-block-white .reasons-item {
-  padding-top: 164px;
-  padding-bottom: 85px;
+  padding-top: 140px;
+  padding-bottom: 60px;
   width: 33.333333%;
 }
 
 .reason-item-block-gray .reasons-item {
-  padding-top: 50px;
-  padding-bottom: 65px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   width: 33.333333%;
 }
 
@@ -243,8 +244,8 @@ a {
 
 .reasons-item-info {
   width: 33%;
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding-top: 25px;
+  padding-bottom: 42px;
 }
 
 .reasons-item-description {
@@ -329,8 +330,8 @@ a {
   font-size: 21px;
   font-family: inherit;
   margin: 0;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 30px;
+  padding-bottom: 29px;
 }
 
 .modal-search-button {
@@ -454,7 +455,7 @@ a {
 .footer-block {
   width: 33.333333%;
   text-align: center;
-  padding: 15px 0;
+  padding: 25px 0 30px 0;
 }
 
 .footer-social ul {
@@ -558,8 +559,22 @@ a {
 .sort-order-list {
   display: flex;
   align-items: center;
-
+  margin: 0;
+  padding: 0;
 }
+/*.sort-order-list li{
+  width: 11px;
+  height: 10px;
+  font-size: 0;
+}
+.sort-order-list li:nth-child(1){
+  background: url(../img/icon-up-dir.svg) no-repeat;
+  margin-right: 11px;
+}
+.sort-order-list li:nth-child(2){
+  background: url(../img/icon-down-dir.svg) no-repeat;
+}*/
+
 
 .catalog-item {
   display: flex;
@@ -720,11 +735,17 @@ a {
   align-items: center;
 }
 .reasons-title-info{
-  margin-bottom: 58px;
+  margin-bottom: 50px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .reasons-title{
-  margin-bottom: 42px;
-  margin-top: 61px;
+  margin-bottom: 27px;
+  margin-top: 59px;
+  max-width: 444px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .reason-item-block-white .reasons-item{
   position: relative;
@@ -759,5 +780,46 @@ a {
   width: 64px;
 }
 .hotel-serch-info{
-  margin-bottom: 54px;
+  margin-bottom: 47px;
+  text-align: center;
+}
+.catalog-rating-stars{
+  font-size: 0;
+  height: 17px;
+  width: 35px;
+  background: url(../img/star.svg) repeat-x;
+}
+.catalog-item:nth-child(1) .catalog-rating-stars{
+  width: 70px;
+}
+.catalog-item:nth-child(2) .catalog-rating-stars{
+  width: 55px;
+}
+.sort-order{
+  fill: #f2f2f2;
+
+}
+.active-sort-order{
+  fill: #81b3d2;
+}
+.sort-order-list li{
+  width: 11px;
+  height: 10px;
+}
+.sort-order-list li:nth-child(1){
+  margin-right:8px;
+}
+.reasons-item-blue .reasons-item-title{
+  max-width:155px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reasons-item-blue .reasons-item-description{
+  max-width:280px;
+}
+.hotel-serch-title{
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 13px;
 }
