@@ -103,7 +103,7 @@ body {
 }
 
 .sedona-foto {
-  background: url(../img/white-background-shape.svg) no-repeat 50% bottom, 
+  background: url(../img/white-background-shape.png) no-repeat 50% bottom, 
     url(../img/background-photo.jpg) no-repeat 50% 20%;
   background-size: 100% 57px, cover;
   height: 508px;
