@@ -619,7 +619,10 @@ a {
 .catalog-item-image{
   margin: 0 30px 0 0;
   padding: 0;
-  height: 90px;
+  /*height: 90px;*/
+}
+.catalog-item-image img{
+  display: block;
 }
 .catalog-item-info{
   margin: 0 6px 0 0;
