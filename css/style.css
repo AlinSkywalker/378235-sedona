@@ -243,8 +243,11 @@ a {
   .reason-item-block-gray .reasons-item {
     padding: 27px 40px 45px 40px;
   }
-  .reason-item-block-gray .reasons-item-info {
+  .reasons-item-info {
     padding: 26px 30px 42px 30px;
+  }
+  .reason-item-block-gray .small-area-reason{
+    padding: 27px 55px 45px 55px;
   }
 }
 
