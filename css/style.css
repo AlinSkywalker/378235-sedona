@@ -217,26 +217,39 @@ a {
 }
 
 .reason-item-block-white .reasons-item {
-  padding-top: 143px;
-  padding-bottom: 70px;
+  padding: 143px 40px 70px 40px;
   width: 33.333333%;
 }
 
 .reason-item-block-gray .reasons-item {
-  padding-top: 27px;
-  padding-bottom: 45px;
+  padding: 27px 40px 45px 40px;
   width: 33.333333%;
 }
 
 .reasons-item-info {
-  width: 33%;
-  padding-top: 26px;
-  padding-bottom: 42px;
+  box-sizing: border-box;
+  width: 33.333333%;
+  padding: 26px 30px 42px 30px;
+}
+
+.reason-item-block-gray .small-area-reason{
+    padding: 27px 55px 45px 55px;
+  }
+
+@media(min-width: 1200px) {
+  .reason-item-block-white .reasons-item {
+    padding: 143px 40px 70px 40px;
+  }
+  .reason-item-block-gray .reasons-item {
+    padding: 27px 40px 45px 40px;
+  }
+  .reason-item-block-gray .reasons-item-info {
+    padding: 26px 30px 42px 30px;
+  }
 }
 
 .reasons-item-blue .reasons-item-title {
   color: #ffffff;
-
 }
 
 .reason-item-foto {
@@ -251,8 +264,8 @@ a {
 }
 .reasons-item-blue .reasons-item-description
 {
-  padding-left: 40px;
-  padding-right: 40px;
+  /*padding-left: 40px;
+  padding-right: 40px;*/
 }
 .reason-item-foto-city {
   background: gray url(../img/city.png) no-repeat 50% 50%;
@@ -977,7 +990,7 @@ fieldset:nth-child(3) {
   right: 93px;
   top:50%;
   transform: translateY(-50%);
-  background-color: red;
+  /*background-color: red;*/
 }
 .search-people-minus-icon::before
 {
@@ -998,7 +1011,7 @@ fieldset:nth-child(3) {
   right: 0px;
   top:50%;
   transform: translateY(-50%);
-  background-color: red;
+  /*background-color: red;*/
 }
 .search-people-plus-icon::before,
 .search-people-plus-icon::after
