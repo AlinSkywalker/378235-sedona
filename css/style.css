@@ -215,7 +215,9 @@ a {
   height: 330px;
   display: flex;
 }
-
+.reasons-item{
+box-sizing: border-box;
+}
 .reason-item-block-white .reasons-item {
   padding: 143px 40px 70px 40px;
   width: 33.333333%;
@@ -233,9 +235,17 @@ a {
 }
 
 .reason-item-block-gray .small-area-reason{
-    padding: 27px 55px 45px 55px;
-  }
-
+  padding: 27px 50px 45px 50px;
+}
+.reason-item-block-gray .beatiful-road{
+  padding: 27px 60px 45px 60px;
+}
+.reason-item-block-white .housing{
+  padding: 143px 45px 70px 45px;
+}
+.reason-item-block-white .food{
+  padding: 143px 50px 70px 50px;
+}
 @media(min-width: 1200px) {
   .reason-item-block-white .reasons-item {
     padding: 143px 40px 70px 40px;
@@ -247,7 +257,11 @@ a {
     padding: 26px 30px 42px 30px;
   }
   .reason-item-block-gray .small-area-reason{
-    padding: 27px 55px 45px 55px;
+    padding: 27px 60px 45px 60px;
+  }
+  .reason-item-block-white .housing,
+  .reason-item-block-white .food{
+    padding: 143px 50px 70px 50px;
   }
 }
 
@@ -916,7 +930,6 @@ fieldset:nth-child(3) {
 }
 
 .reasons-item-blue .reasons-item-title {
-  max-width: 155px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -970,6 +983,7 @@ fieldset:nth-child(3) {
   position: absolute;
   display: block;
   font-size: 0;
+  outline: none;
 }
 .search-calendar-icon{
   right:10px;
@@ -987,10 +1001,10 @@ fieldset:nth-child(3) {
 }
 
 .search-people-minus-icon{
-  width: 22px;
+  width: 38px;
   height: 37px;
   background-color: transparent;
-  right: 93px;
+  right: 77px;
   top:50%;
   transform: translateY(-50%);
   /*background-color: red;*/
@@ -1000,21 +1014,21 @@ fieldset:nth-child(3) {
   content: "";
   position: absolute;
   background-color:#cacaca;
-  width: 22px;
+  width: 12px;
   height: 3px;
-  left:0px;
+  left:50%;
   z-index: 10;
   top:50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 .search-people-plus-icon{
-  width: 22px;
+  width: 38px;
   height: 37px;
   background-color: transparent;
   right: 0px;
   top:50%;
   transform: translateY(-50%);
-  /*background-color: red;*/
+  /*background-color: green;*/
 }
 .search-people-plus-icon::before,
 .search-people-plus-icon::after
@@ -1023,17 +1037,18 @@ fieldset:nth-child(3) {
   position: absolute;
   background-color:#cacaca;
   width: 3px;
-  height: 22px;
+  height: 12px;
   z-index: 10;
-  left:11px;
 }
 .search-people-plus-icon::after{
-  transform: rotate(90deg);
-  top:7px;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
 }
 .search-people-plus-icon::before{
+  left:50%;
   top:50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 .search-form .search-people-plus-icon:hover::after,
 .search-form .search-people-plus-icon:hover::before{
