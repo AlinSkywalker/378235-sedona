@@ -320,7 +320,7 @@ box-sizing: border-box;
   position: absolute;
   background: #ffffff;
   padding: 55px;
-  padding-top: 40px;
+  padding-top: 45px;
 }
 
 .modal h2 {
@@ -943,7 +943,7 @@ fieldset:nth-child(3) {
 }
 
 .search-item {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -963,7 +963,7 @@ fieldset:nth-child(3) {
   width: 343px;
   height: 33px;
   outline: none;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 10px;
   margin: 0;
   box-sizing: border-box;
   border: 2px solid #f2f2f2;
