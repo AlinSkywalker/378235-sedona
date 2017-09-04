@@ -912,6 +912,12 @@ fieldset:nth-child(3) {
 .sort-order {
   fill: #f2f2f2;
 }
+.sort-order:hover {
+  fill: #000000;
+}
+.sort-order:active {
+  fill: #81b3d2;
+}
 
 .active-sort-order {
   fill: #81b3d2;
