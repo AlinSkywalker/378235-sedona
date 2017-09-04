@@ -992,16 +992,14 @@ fieldset:nth-child(3) {
   height: 22px;
   fill: #cacaca;
 }
-.search-form .search-calendar-icon:active {
+
+.search-form .search-calendar-icon:hover svg{
+  fill: #818181;
+}
+.search-form .search-calendar-icon:active svg{
   fill: #81b3d2;
 }
 
-.search-form .search-calendar-icon:hover{
-  fill: #818181;
-}
-.calendar-icon:active{
-  fill: #81b3d2;
-}
 .search-people-minus-icon{
   width: 38px;
   height: 37px;
