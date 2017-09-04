@@ -969,15 +969,16 @@ fieldset:nth-child(3) {
   border: 2px solid #f2f2f2;
 }
 
+.search-form input:hover {
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
 .search-form input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
 
-.search-form input:hover {
-  background-color: #ebebeb;
-  border-color: #ebebeb;
-}
+
 
 .ineractive-element{
   position: absolute;
