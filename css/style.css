@@ -359,32 +359,6 @@ box-sizing: border-box;
   margin-top:40px;
 }
 
-.social-button {
-  width: 46px;
-  height: 48px;
-  font-size: 0px;
-  margin-right: 6px;
-}
-
-.social-button:last-child {
-  margin-right: 0;
-}
-
-.social-button-twitter {
-  background: #81b3d2 url(../img/twitter.svg) no-repeat 50% 50%;
-  background-size: 17px 15px;
-}
-
-.social-button-facebook {
-  background: #81b3d2 url(../img/fb-icon.svg) no-repeat 50% 50%;
-  background-size: 12px 22px;
-}
-
-.social-button-youtube {
-  background: #81b3d2 url(../img/youtube.svg) no-repeat 50% 50%;
-  background-size: 20px 16px;
-}
-
 .filter-button {
   background-color: rgba(255, 255, 255, 0);
   width: 140px;
@@ -490,7 +464,46 @@ box-sizing: border-box;
 
 .footer-social ul li {
   display: inline-block;
+  margin-right: 6px;
   /*font-size: 0;*/
+}
+.footer-social ul li:last-child {
+  margin-right: 0;
+}
+.social-button {
+  width: 46px;
+  height: 48px;
+  font-size: 0;
+  position: relative;
+}
+
+.social-button::before{
+  position: absolute;
+  content: "";
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+}
+.social-button-twitter::before {
+  background:  url(../img/twitter.svg) no-repeat;
+  width: 17px;
+  height: 15px;
+}
+.social-button-facebook::before  {
+  background: url(../img/fb-icon.svg) no-repeat;
+  width: 12px;
+  height: 22px;
+}
+
+.social-button-youtube::before  {
+  background: url(../img/youtube.svg) no-repeat;
+  width: 20px;
+  height: 16px;
+}
+.social-button:active::before{
+  opacity: 0.7;
 }
 
 .filters ul {
@@ -588,7 +601,12 @@ fieldset:nth-child(3) {
   width: 27px;
   background: rgba(0, 0, 0, 0) url(../img/checkbox-on.svg) no-repeat;
 }
-
+.filter-checkbox:checked:disabled+label::before {
+  opacity: 0.3;
+}
+.filter-checkbox:disabled+label::before {
+  opacity: 0.3;
+}
 .search-result-order {
   display: flex;
   justify-content: space-between;
@@ -838,7 +856,14 @@ fieldset:nth-child(3) {
   font-size: 0;
   width: 115px;
   height: 41px;
-  background: url(../img/logo-htmlacademy.svg) no-repeat;
+  /*background: url(../img/logo-htmlacademy.svg) no-repeat;*/
+}
+
+.copyright-logo:hover .copyright-logo-svg{
+  fill: #5496bd;
+}
+.copyright-logo:active .copyright-logo-svg{
+  fill: #bdbbbc;
 }
 
 .footer-copyright span {
