@@ -1113,3 +1113,13 @@ fieldset:nth-child(3) {
 /*.search-form .search-item:last-of-type{
   margin-bottom: 50;
 }*/
+@keyframes bounce {
+ 0% { transform: translateY(-500px); z-index: -10; }
+ 100% { transform: translateY(0); z-index: 10;}
+ } 
+.modal-show{
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-timing-function:linear;
+}
