@@ -404,6 +404,7 @@ a {
   line-height: 26px;
   color: #000000;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -1136,7 +1137,9 @@ fieldset:nth-child(3) {
 
 .search-item {
   margin-bottom: 20px;
+  margin-top:10px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
@@ -1150,8 +1153,8 @@ fieldset:nth-child(3) {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-          background-color: green;
-          padding:0;
+  /*background-color: green;*/
+  padding:0;
 }
 
 .search-form input {
@@ -1161,8 +1164,9 @@ fieldset:nth-child(3) {
   color: inherit;
   text-transform: inherit;
   font-weight: bold;
-  width: 343px;
-  height: 33px;
+  /*width: 343px;*/
+  flex-grow: 1;
+  height: 37px;
   outline: none;
   padding: 0 0 0 10px;
   margin: 0;
@@ -1299,4 +1303,7 @@ fieldset:nth-child(3) {
   width: 115px;
   text-align: center;
   padding: 0;
+}
+.search-item label{
+  width:111px;
 }
