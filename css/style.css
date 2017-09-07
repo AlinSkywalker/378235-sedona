@@ -950,7 +950,14 @@ fieldset:nth-child(3) {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 15px;
+}
+
+@media(min-width: 1200px){
+  .price-controls .min-price,
+  .price-controls .max-price {
+    padding-left: 65px;
+  }
 }
 
 .price-controls input {
