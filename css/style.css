@@ -1307,3 +1307,6 @@ fieldset:nth-child(3) {
 .search-item label{
   width:111px;
 }
+.search-item .search-child-label{
+  width:64px;
+}
